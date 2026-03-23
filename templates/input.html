@@ -20,6 +20,33 @@
     <!--   next_steps: text input                                                  -->
     <!-- Don't forget: action="/input" method="POST" and a submit button          -->
 
-    <p><em>Build your form here!</em></p>
+    <form action="/input" method="POST">
+<form action="/input" method="POST">
+    <label for="project_title">Project:</label>
+    <input type="text" name="project_title" id="project_title" list="project-suggestions">
+
+    <label for="title">Title:</label>
+    <input type="text" name="title" id="title">
+
+    <label for="description">Description:</label>
+    <textarea name="description" id="description"></textarea>
+
+    <label for="status">Status:</label>
+    <select name="status" id="status">
+        <option value="In Progress">In Progress</option>
+        <option value="Blocked">Blocked</option>
+        <option value="Done">Done</option>
+    </select>
+
+    <label for="next_steps">Next Steps:</label>
+    <input type="text" name="next_steps" id="next_steps">
+
+    <button type="submit">Save Task</button>
+</form>
+
+
+
+
+    </form>
     <p><a href="{{ url_for('display') }}">View existing tasks</a></p>
 {% endblock %}
