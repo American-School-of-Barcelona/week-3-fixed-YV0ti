@@ -20,7 +20,7 @@
     <!--   next_steps: text input                                                  -->
     <!-- Don't forget: action="/input" method="POST" and a submit button          -->
 
-    <form action="/input" method="POST">
+   
 <form action="/input" method="POST">
     <label for="project_title">Project:</label>
     <input type="text" name="project_title" id="project_title" list="project-suggestions">
@@ -42,11 +42,5 @@
     <input type="text" name="next_steps" id="next_steps">
 
     <button type="submit">Save Task</button>
-</form>
-
-
-
-
-    </form>
     <p><a href="{{ url_for('display') }}">View existing tasks</a></p>
 {% endblock %}
