@@ -37,8 +37,6 @@ def input_task():
         status = request.form["status"]
         next_steps = request.form["next_steps"]
 
-        from datetime import datetime
-        
         stamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         print(stamp)  
         # TODO: Append the new task to tasks.csv using csv.DictWriter
